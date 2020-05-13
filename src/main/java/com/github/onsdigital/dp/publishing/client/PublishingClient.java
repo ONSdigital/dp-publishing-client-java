@@ -1,4 +1,8 @@
 package com.github.onsdigital.dp.publishing.client;
 
-public class PublishingClient {
+import java.util.Set;
+
+public interface PublishingClient {
+
+    PublishingTransactions createTransactions(Set<String> publishingHostIPs);
 }
